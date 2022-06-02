@@ -10,6 +10,10 @@
 
     --backgroundcolor-2: linear-gradient(to right, #fafafa, #f6ddda, #e1bee7);
     --backgroundcolor-3: linear-gradient(to right, #efebe9, #e0e9e8);
+
+    --space: 2rem;
+
+    --boder: linear-gradient(to right, #fafafa, #fbd480, #e1bee7);
 }
 
 * {
@@ -23,12 +27,16 @@ html {
 
 body {
     margin: 0;
+    
+    /* position: sticky;
+    top: 0; */
+    background-color: var(--backgroundcolor-1);
 }
 
 header {
-    background-image: var(--backgroundcolor-3);
+    /* background-image: var(--backgroundcolor-3);
     position: sticky;
-    top: 0;
+    top: 0; */
     padding: 1rem 0;
     padding-top: .5rem;
 }
@@ -91,9 +99,6 @@ a {
 }
 
 main {
-    position: sticky;
-    top: 0;
-    background-image: var(--backgroundcolor-3);
     padding-top: 1rem;
 }
 
@@ -128,9 +133,80 @@ main {
     background-image: var(--backgroundcolor-2);
     position: sticky;
     top: 0;
+    padding: 1rem 10rem;
+    /* padding-right: 10rem; */
+}
+
+.skills {
+    font-size: 1.5rem;
+}
+
+.third-container {
+    background-color: var(--color-2);
     padding-left: 10rem;
     padding-right: 10rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
 }
+
+.image-container-1, .description {
+    float: left;
+    width: 50%;
+}
+
+.row, .third-right {
+    float: left;
+    width: 50%;
+}
+
+.row {
+    margin:  var(--space, 4rem) 0;
+    background-color: var(--backgroundcolor-1);
+    padding: 2rem;
+    border-radius: var(--radius-1);
+}
+
+[class ^= "col-"]{ 
+    float: left;
+}
+
+
+[class ^= "col-"]:not(:last-child) {
+    margin-bottom: var(--space);
+}
+
+.col-3-of-3 {
+    width: 100%;
+    /* background-image: var(--backgroundcolor-2); */
+    /* border-radius: var(--radius-2); */
+
+    background-color: var(--color-2);
+    
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 10px;
+    border-image-source: var(--boder);
+
+    /* border-start-start-radius: var(--radius-2); */
+}
+
+.description {
+    padding-left: 4rem;
+}
+
+.third-right {
+    padding-left: 4rem;
+}
+
+.awesome {
+    font-size: 6rem;
+    margin-bottom: 0rem;
+}
+
+.col-1-of-3 {
+    width: calc((100% - (2 * var(--space))) / 3);
+}
+
 
 
 
