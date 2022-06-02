@@ -1,14 +1,19 @@
 :root {
     --backgroundcolor-1: #e0f2f1;
+
     --color-2: #fffffff3;
     --color-3: #f57f17;
+    --color-4: #b0bec5;
 
     --radius-1: 1rem;
     --radius-2: .5rem;
+
+    --backgroundcolor-2: linear-gradient(to right, #fafafa, #f6ddda, #e1bee7);
+    --backgroundcolor-3: linear-gradient(to right, #efebe9, #e0e9e8);
 }
 
 * {
-    box-sizing: inherit;
+    box-sizing: inherit; 
 }
 
 html {
@@ -21,7 +26,9 @@ body {
 }
 
 header {
-    background-color: var(--backgroundcolor-1);
+    background-image: var(--backgroundcolor-3);
+    position: sticky;
+    top: 0;
     padding: 1rem 0;
     padding-top: .5rem;
 }
@@ -36,22 +43,20 @@ header {
 .heading, nav {
     float: left;
     line-height: 3rem;
-    /* width: 50%; */
+    width: 50%;
 }
 
 .heading {
-    width: 55%;
-    padding-left: 3rem;
+    /* width: 0%; */
+    padding-left: 6rem;
 }
-
+/* 
 nav {
-    width: 45%;
-}
-
+    width: 70%;
+} */
 
 li, a {
     float: left;
-    padding-right: 3rem;
 }
 
 .ul {
@@ -60,6 +65,7 @@ li, a {
 
 ul li {
     list-style-type: none;
+    text-align: right;
 }
 
 ul a {
@@ -67,10 +73,10 @@ ul a {
 }
 
 a {
-    text-align: right;
     text-transform: capitalize;
     color: black;
     font-size: 1.5rem;
+    padding-right: 6rem;
 }
 
 .home {
@@ -80,13 +86,50 @@ a {
 .contact {
     background-color: var(--color-3);
     border-radius: var(--radius-2);
-    padding-left: 2.5rem;
+    padding: 1rem 4rem;
     color: var(--color-2);
 }
 
 main {
-    background-color: var(--backgroundcolor-1);
+    position: sticky;
+    top: 0;
+    background-image: var(--backgroundcolor-3);
     padding-top: 1rem;
+}
+
+.first-left, .first-right {
+    float: left;
+    width: 50%;
+}
+
+.name {
+    font-size: 7rem;
+    text-transform: capitalize;
+    margin-bottom: 0;
+    padding-right: 1rem;
+}
+
+.write {
+    font-size: 1.5rem;
+    color: var(--color-4);
+}
+
+.hire {
+    text-decoration: none;
+    margin: 2rem 0;
+}
+
+.first-container {
+    margin-bottom: 5rem; padding-left: 10rem;
+    padding-right: 10rem;
+}
+
+.second-container {
+    background-image: var(--backgroundcolor-2);
+    position: sticky;
+    top: 0;
+    padding-left: 10rem;
+    padding-right: 10rem;
 }
 
 
