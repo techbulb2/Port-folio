@@ -1,0 +1,98 @@
+:root {
+    --backgroundcolor-1: #e0f2f1;
+    --color-2: #fffffff3;
+    --color-3: #f57f17;
+
+    --radius-1: 1rem;
+    --radius-2: .5rem;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    background-color: var(--backgroundcolor-1);
+    padding: 1rem 0;
+    padding-top: .5rem;
+}
+
+.nav-container {
+    background-color: var(--color-2);
+    margin: 1rem 10rem;
+    padding-bottom: 0;
+    border-radius: var(--radius-1);
+}
+
+.heading, nav {
+    float: left;
+    line-height: 3rem;
+    /* width: 50%; */
+}
+
+.heading {
+    width: 55%;
+    padding-left: 3rem;
+}
+
+nav {
+    width: 45%;
+}
+
+
+li, a {
+    float: left;
+    padding-right: 3rem;
+}
+
+.ul {
+    padding-top: .3rem;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+ul a {
+    text-decoration: none;
+}
+
+a {
+    text-align: right;
+    text-transform: capitalize;
+    color: black;
+    font-size: 1.5rem;
+}
+
+.home {
+    color: var(--color-3)
+}
+
+.contact {
+    background-color: var(--color-3);
+    border-radius: var(--radius-2);
+    padding-left: 2.5rem;
+    color: var(--color-2);
+}
+
+main {
+    background-color: var(--backgroundcolor-1);
+    padding-top: 1rem;
+}
+
+
+
+.clearfix::after {
+    clear: both;
+    content: "";
+    display: block;
+}
