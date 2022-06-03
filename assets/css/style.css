@@ -11,7 +11,7 @@
     --backgroundcolor-2: linear-gradient(to right, #fafafa, #f6ddda, #e1bee7);
     --backgroundcolor-3: linear-gradient(to right, #efebe9, #e0e9e8);
 
-    --space: 2rem;
+    --space: 3rem;
 
     --boder: linear-gradient(to right, #fafafa, #fbd480, #e1bee7);
 }
@@ -245,12 +245,20 @@ main {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1140px;
     margin:  var(--space, 4rem) auto;
 }
 
-.col-1-of-3 {
+.nol-1-of-3 {
     width: calc((100% - (2 * var(--space))) / 3);
+}
+
+[class ^= "nol-"]:not(:last-child) {
+    margin-right: var(--space);
+}
+
+[class ^= "nol-"]{ 
+    float: left;
 }
 
 .image-container {
