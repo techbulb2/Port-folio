@@ -4,6 +4,7 @@
     --color-2: #fffffff3;
     --color-3: #f57f17;
     --color-4: #b0bec5;
+    --color-5: rgb(8, 8, 198);
 
     --radius-1: 1rem;
     --radius-2: .5rem;
@@ -93,6 +94,10 @@ a {
     border-radius: var(--radius-2);
     padding: 1rem 4rem;
     color: var(--color-2);
+}
+
+.contact:active {
+    color: var(--color-5);
 }
 
 main {
