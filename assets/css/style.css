@@ -1,5 +1,6 @@
 :root {
     --backgroundcolor-1: #faf0d9;
+    --backgroundcolor-4: #fb4a85;
 
     --color-2: #fffffff3;
     --color-3: #f57f17;
@@ -8,6 +9,7 @@
 
     --radius-1: 1rem;
     --radius-2: .5rem;
+    --radius-3: 3rem;
 
     --backgroundcolor-2: linear-gradient(to right, #fafafa, #f6ddda, #e1bee7);
     --backgroundcolor-3: linear-gradient(to right, #efebe9, #e0e9e8);
@@ -109,6 +111,10 @@ main {
     width: 50%;
 }
 
+.first-right {
+    padding-left: 4rem;
+}
+
 .name {
     font-size: 7rem;
     text-transform: capitalize;
@@ -133,7 +139,7 @@ main {
 
 .second-container {
     background-image: var(--backgroundcolor-2);
-    position: static;
+    position: relative;
     top: 0;
     padding: 3.5rem 10rem;
 }
@@ -266,6 +272,17 @@ main {
     float: left;
 }
 
+
+.ui-container {
+    max-width: 60%;
+    border-radius: var(--radius-3);
+    background-color: var(--color-2);
+    position: relative;
+    padding-right: 1rem;
+}
+
+
+
 .image-container {
     width: 100%;
     border-radius: 3px;
@@ -278,6 +295,71 @@ img {
     display: block;
     /* margin: 2rem auto; */
 }
+
+.skills-container, .action-container {
+    float: left;
+    /* width: 50%; */
+}
+
+.skills-container {
+    width: 50%;
+}
+
+.action-container {
+    width: 50%;
+    padding-left: 6rem;
+
+}
+
+.image-container-2 {
+    width: 100%;
+}
+
+.image-container-2, .uiux {
+    float: left;
+}
+
+.image-container-2 {
+    width: 30%;
+}
+
+.uiux {
+    width: 70%;
+}
+
+.uiux h2 {
+    /* font-size: 2rem; */
+    text-transform: capitalize;
+}
+
+.class {
+    margin-bottom: 0;
+}
+
+.uiux p {
+    font-size: 1rem;
+}
+
+.image-container-3 {
+    width: 100%;
+    border-radius: 3px;
+    overflow: hidden;
+    background-color: var(--backgroundcolor-4);
+}
+
+
+
+.image {
+    border: 5px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+    border-image-source: var(--boder);
+
+    
+    
+}
+
+
 
 
 
