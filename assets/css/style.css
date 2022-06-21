@@ -46,30 +46,44 @@ header {
 }
 
 .nav-container {
-    background-color: var(--color-2);
+    background-color: var(--color-4);
     margin: 1rem 10rem;
     padding-bottom: 0;
     border-radius: var(--radius-1);
+    padding-left: 2rem;
+    padding-right: 2rem;
+    /* text-align: right; */
+    /* max-width: 874px; */
 }
 
 .heading, nav {
     float: left;
     line-height: 3rem;
-    width: 50%;
+    /* width: 50%; */
 }
 
 .heading {
-    /* width: 0%; */
-    padding-left: 6rem;
+    width: 30%;
+    /* padding-left: .5rem; */
+}
+
+.nav {
+    /* width: 70%; */
+    max-width: 600px;
 }
 
 
 li, a {
     float: left;
+    /* width: 50%; */
 }
 
+
 .ul {
+    text-align: right;
     padding-top: .3rem;
+    padding-left: 30rem;
+    /* max-width: 400px; */
 }
 
 ul li {
@@ -81,11 +95,17 @@ ul a {
     text-decoration: none;
 }
 
+
+[class ^= "li"]:not(:last-child) {
+    padding-right: 6rem;
+}
+
+
 a {
     text-transform: capitalize;
     color: black;
     font-size: 1.5rem;
-    padding-right: 6rem;
+    /* width: 50%; */
 }
 
 .home {
@@ -310,7 +330,7 @@ img {
 
 .action-container {
     width: 50%;
-    padding-left: 6rem;
+    padding-left: 7rem;
 
 }
 
